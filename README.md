@@ -14,4 +14,5 @@
   3. navigate into project root
   4. install yarn `npm install -g yarn`
   5. install node modules `yarn`
-  6. start server `yarn dev`
+  6. start mongoose server
+  7. start server `yarn dev`
