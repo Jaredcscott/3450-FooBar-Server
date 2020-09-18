@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "cross-env node build/bin/www.js",
-		"dev": "cross-env NODE_ENV=dev nodemon --exec babel-node src/bin/www.js",
+		"dev": "cross-env NODE_ENV=dev nodemon --exec babel-node src/index.js",
 		"dev-debug": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect src/bin/www.js",
 		"build": "babel src/ -d build/",
 		"lint": "eslint --ignore-path .gitignore src",
@@ -13,7 +13,7 @@
 		"tnw": "yarn test-no-watch"
 	},
 	"dependencies": {
-		"body-parser": "~1.16.0",
+		"body-parser": "^1.19.0",
 		"connect-mongo": "^2.0.3",
 		"cookie": "^0.3.1",
 		"cors": "^2.8.4",
@@ -21,18 +21,21 @@
 		"express": "~4.14.1",
 		"express-session": "^1.15.6",
 		"express-ws": "^4.0.0",
+		"http": "^0.0.1-security",
 		"immer": "^7.0.7",
 		"lodash": "^4.17.10",
-		"mongoose": "^5.9.24",
+		"mongoose": "^5.10.5",
 		"mongoose-beautiful-unique-validation": "^7.1.1",
 		"mongoose-lean-defaults": "^0.3.1",
 		"mongoose-lean-getters": "^0.1.1",
+		"morgan": "^1.10.0",
 		"passport": "^0.4.0",
 		"passport-local-mongoose": "^6.0.1",
 		"ws": "^7.3.1"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.11.6",
+		"@babel/core": "^7.11.6",
 		"@babel/node": "^7.10.5",
 		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
 		"@babel/plugin-proposal-optional-chaining": "^7.11.0",
